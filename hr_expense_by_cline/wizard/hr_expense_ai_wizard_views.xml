@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- HR Expense AI Wizard Form View -->
+    <record id="view_hr_expense_ai_wizard_form" model="ir.ui.view">
+        <field name="name">hr.expense.ai.wizard.form</field>
+        <field name="model">hr.expense.ai.wizard</field>
+        <field name="arch" type="xml">
+            <form string="AI 按鈕">
+                <group>
+                    <field name="expense_id" invisible="1"/>
+                    <field name="ai_date"/>
+                </group>
+                <footer>
+                    <button name="action_confirm" string="確認" type="object" class="btn-primary"/>
+                    <button string="取消" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
